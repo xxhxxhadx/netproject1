@@ -1,4 +1,5 @@
 #include "generate.h"
+#include "generate.h"
 
 void generate(int ** POW, int x)
 {
@@ -25,8 +26,16 @@ void generate(int ** POW, int x)
 			}
 		}
 	}
+	if (distance[2] == inf) { cout << "不存在该节点。" << endl; menu(); }
 	cout << "下一跳：" << endl;
-	for (int i = 0; i < row; i++)cout << i+1 << "->" << t[i]+1 << endl;
-	cout << x +1<< "的最短路径：" << endl;
-	for (int i = 0; i < row; i++)cout << x+1 << "   to   " << i+1 << "   is		" << distance[i] << endl;
+	for (int i = 0; i < row; i++) {
+		if (distance[i] == 999)continue;
+		cout << i + 1 << "->" << t[i] + 1 << endl;
+	}
+	cout << x + 1 << "的最短路径：" << endl;
+	for (int i = 0; i < row; i++) {
+		if (distance[i] == 999)continue;
+		cout << x + 1 << "   to   " << i + 1 << "   is		" << distance[i] << endl;
+	}
 }
+

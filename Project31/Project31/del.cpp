@@ -1,14 +1,13 @@
 #include "del.h"
 
-#include "del.h"
 #include<iostream>
+using namespace std;
 int ** del(int ** ary)
 {
 	cout << "梁弘健" << endl;
 	int *ary1;
 	ary1 = new int[row];
-	for (int i = 0; i < row; i++)ary1[i] = i+1;
-	int **head = NULL;
+	for (int i = 0; i < row; i++)ary1[i] = i + 1;
 	int col = row;
 	int n, k = 0, f = 0, i = 0;
 	while (1) {
@@ -25,20 +24,8 @@ int ** del(int ** ary)
 		break;
 	}
 	for (; (*ary1 != n); ++i)++ary1;//寻找要删除的元素
-	head = new int *[row - 1];//建立行
-	for (int j = 0; j<col - 1; ++j)head[j] = new int[col - 1];//建立列
-	k = 0;
-	for (int j = 0; j<row; ++j) {//进行二维数组的覆盖
-		if (j == i)continue;
-		f = 0;
-		for (int g = 0; g<col; ++g) {
-			if (g == i)continue;
-			head[k][f] = ary[j][g];
-			++f;
-		}
-		++k;
-	}
-	row--;
+	for (int j = 0; j<row; ++j)ary[i][j] = 999;
+	for (int k = 0; k<row; ++k)ary[k][i] = 999;
 	cout << endl;
-	return head;
+	return ary;
 }
