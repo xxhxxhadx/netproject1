@@ -4,6 +4,7 @@
 #include<iostream>
 int ** del(int ** ary)
 {
+	cout << "Áººë½¡" << endl;
 	int *ary1;
 	ary1 = new int[row];
 	for (int i = 0; i < row; i++)ary1[i] = i+1;
