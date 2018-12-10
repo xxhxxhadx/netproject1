@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />
+    <ClInclude Include="dd.h" />
     <ClInclude Include="getrow.h" />
     <ClInclude Include="del.h" />
     <ClInclude Include="generate.h" />
@@ -129,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="add.cpp" />
     <ClCompile Include="cnm.cpp" />
+    <ClCompile Include="dd.cpp" />
     <ClCompile Include="getrow.cpp" />
     <ClCompile Include="del.cpp" />
     <ClCompile Include="generate.cpp" />

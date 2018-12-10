@@ -11,7 +11,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
-
+#include"dd.h"
 using namespace std;
 extern int row;
 #define inf 999

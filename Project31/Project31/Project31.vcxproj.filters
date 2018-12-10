@@ -45,6 +45,9 @@
     <ClInclude Include="getrow.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="dd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sc.cpp">
@@ -72,6 +75,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="getrow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

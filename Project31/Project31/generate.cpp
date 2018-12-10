@@ -26,7 +26,7 @@ void generate(int ** POW, int x)
 		}
 	}
 	cout << "下一跳：" << endl;
-	for (int i = 0; i < row; i++)cout << i << "->" << t[i] << endl;
+	for (int i = 0; i < row; i++)cout << i+1 << "->" << t[i] << endl;
 	cout << x << "的最短路径：" << endl;
-	for (int i = 0; i < row; i++)cout << x << "   to   " << i << "   is		" << distance[i] << endl;
+	for (int i = 0; i < row; i++)cout << x+1 << "   to   " << i+1 << "   is		" << distance[i] << endl;
 }

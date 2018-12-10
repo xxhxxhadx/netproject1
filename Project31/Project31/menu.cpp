@@ -10,6 +10,7 @@ void menu()
 		cout << "1.查看路由表" << endl;
 		cout << "2.删除节点" << endl;
 		cout << "3.增加节点" << endl;
+		cout << "4.删改权值" << endl;
 		cout << "0.退出程序" << endl;
 		cout << "请选择你要实现的功能" << endl;
 		while (!(cin >> i)) {
@@ -18,9 +19,10 @@ void menu()
 			cin.ignore();
 		}
 		switch (i) {
-		case 1:POW = sc(); cout << "请输入你要查询的路由器号："; cin >> x; generate(POW, x); cout << endl; cnm(POW); break;
+		case 1:POW = sc(); cout << "请输入你要查询的路由器号："; cin >> x; generate(POW, x-1); cout << endl; cnm(POW); break;
 		case 2:POW = sc(); POW=del(POW); cout <<"删除成功"<<endl; cnm(POW); break;
 		case 3:POW = sc(); POW=add(POW); cout<<"添加成功" << endl; cnm(POW);; break;
+		case 4:POW = sc(); POW = dsx(POW); cout << "删改成功" << endl; cnm(POW);; break;
 		case 0:exit(0); break;
 		default:break;
 		}
@@ -28,8 +30,5 @@ void menu()
 }
 
 int main() {
-	////////////
-	//////////////////
-	////////////////
 	menu();
 }
